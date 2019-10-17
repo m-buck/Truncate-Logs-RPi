@@ -1,7 +1,7 @@
 import glob
-log = glob.glob('*.log')
 path = "/home/pi/"
-for file in log:
+ext = glob.glob('*.log')
+for file in ext:
 	filename = path + str(file)
 	with open(filename, 'w'):
 		pass
